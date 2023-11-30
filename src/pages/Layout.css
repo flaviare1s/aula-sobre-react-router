@@ -1,0 +1,17 @@
+.menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.links {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.links:active {
+    color: black;
+    text-decoration: underline;
+}
