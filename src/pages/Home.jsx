@@ -1,19 +1,19 @@
 import { useEffect } from "react"
-import { useProductList } from "../services/useProductList"
+import { usePersonsList } from "../services/usePersonsList"
 
 
 export const Home = () => {
-  const { products, loadProducts } = useProductList()
+  const { pessoas, loadPessoas } = usePersonsList()
 
   useEffect(() => {
-    loadProducts()
+    loadPessoas()
   }, [])
 
   return (
     <>
       <div>
           <h1>Home</h1>
-          <h2>{products[0].product}</h2>
+          <h2>{pessoas}</h2>
       </div>
 
     </>
