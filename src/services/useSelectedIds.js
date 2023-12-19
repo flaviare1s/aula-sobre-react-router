@@ -1,12 +1,12 @@
 import { ApiUrl } from "../constants"
 
 export const useSelectedIds = () => {
-    const SelectedIds = (personId) => {
+    const SelectedIds = (id) => {
         fetch(`${ApiUrl}/selecionadas`, {
             method: 'POST',
-            body: JSON.stringify({personId})
+            body: JSON.stringify({userId: id})
         }) 
-        console.log(personId)
+        console.log(user.id)
     }
 
     return { SelectedIds }
